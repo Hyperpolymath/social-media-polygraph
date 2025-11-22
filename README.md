@@ -3,7 +3,9 @@
 > AI-powered fact-checking and misinformation detection for social media
 
 [![CI/CD](https://github.com/hyperpolymath/social-media-polygraph/workflows/CI%2FCD%20Pipeline/badge.svg)](https://github.com/hyperpolymath/social-media-polygraph/actions)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-MIT%20%2B%20Palimpsest-blue.svg)](LICENSE)
+[![RSR Compliance](https://img.shields.io/badge/RSR-Silver-blue.svg)](scripts/check-rsr-compliance.sh)
+[![Security](https://img.shields.io/badge/security-RFC%209116-green.svg)](.well-known/security.txt)
 
 ## Overview
 
@@ -302,7 +304,15 @@ Key endpoints:
 
 ## Contributing
 
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+We welcome contributions! This project follows the **Tri-Perimeter Contribution Framework (TPCF)**:
+
+- **Perimeter 3 (Community Sandbox)**: Open to all - submit PRs from forks
+- **Perimeter 2 (Trusted Contributors)**: Regular contributors with proven track record
+- **Perimeter 1 (Core Maintainers)**: Project leadership and decision-making
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) and [MAINTAINERS.md](MAINTAINERS.md) for details.
+
+### Quick Start
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -322,7 +332,18 @@ This tool is designed to combat misinformation and should be used responsibly:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is **dual-licensed**:
+
+- **[MIT License](LICENSE)** - Permissive open source license
+- **[Palimpsest License v0.8](LICENSE-PALIMPSEST.txt)** - Adds ethical use guidelines
+
+You may choose which license to follow. The Palimpsest License provides additional community expectations around:
+- Ethical use (no surveillance, weapons, discrimination)
+- Attribution and transparency
+- Privacy and accessibility
+- Community contribution
+
+See [LICENSE-PALIMPSEST.txt](LICENSE-PALIMPSEST.txt) for full details.
 
 ## Acknowledgments
 
@@ -330,11 +351,38 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - spaCy and Hugging Face for NLP models
 - Open-source community
 
+## RSR Framework Compliance
+
+This project follows the **Rhodium Standard Repository (RSR)** framework for high-quality, maintainable open source software.
+
+**Current Status**: Silver Level ⭐
+
+Run compliance check:
+```bash
+just validate-rsr
+# or
+./scripts/check-rsr-compliance.sh
+```
+
+### RSR Standards Met
+
+✅ **Documentation**: Complete (README, SECURITY, CODE_OF_CONDUCT, CONTRIBUTING, MAINTAINERS, CHANGELOG)
+✅ **.well-known**: RFC 9116 security.txt, ai.txt, humans.txt
+✅ **Build System**: justfile with 30+ recipes
+✅ **Testing**: Comprehensive test suites
+✅ **CI/CD**: GitHub Actions workflows
+✅ **Security**: Vulnerability disclosure, dual licensing
+✅ **Community**: TPCF governance model
+✅ **Type Safety**: TypeScript + Python type hints
+✅ **Containerization**: Podman/Docker support
+
 ## Support
 
 - **Documentation**: [docs/](docs/)
 - **Issues**: [GitHub Issues](https://github.com/hyperpolymath/social-media-polygraph/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/hyperpolymath/social-media-polygraph/discussions)
+- **Security**: See [SECURITY.md](SECURITY.md)
+- **Humans**: See [.well-known/humans.txt](.well-known/humans.txt)
 
 ## Roadmap
 

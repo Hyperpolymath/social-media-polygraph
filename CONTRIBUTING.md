@@ -26,6 +26,49 @@ Please be respectful and considerate in all interactions. We're building this to
    - Your proposed solution
    - Any alternatives you've considered
 
+## Tri-Perimeter Contribution Framework (TPCF)
+
+This project uses a **graduated trust model** with three contribution perimeters. See [MAINTAINERS.md](MAINTAINERS.md) for full details.
+
+### Perimeter 3: Community Sandbox (You Are Here!)
+
+**Everyone starts here.** Open to all contributors.
+
+**Access**: Fork-based contributions, public issues/discussions
+
+**What you can do**:
+- Report bugs and request features
+- Submit pull requests (require review)
+- Fix documentation
+- Participate in discussions
+- Help other community members
+
+**Path forward**: After 3+ months and 10+ merged PRs, you can be nominated for Perimeter 2 (Trusted Contributor).
+
+### Perimeter 2: Trusted Contributors
+
+**Regular contributors with proven track record.**
+
+**Access**: Write access to development branches, auto-approved CI/CD
+
+**Requirements**:
+- 3+ months of active contribution
+- 10+ merged pull requests
+- Demonstrated code quality
+- Approval from 2+ core maintainers
+
+### Perimeter 1: Core Maintainers
+
+**Project leadership.**
+
+**Access**: Write access to main branch, voting rights
+
+**Requirements**:
+- 6+ months as Trusted Contributor
+- Deep expertise in component/area
+- Leadership and mentoring
+- Unanimous approval from existing core
+
 ### Pull Requests
 
 1. Fork the repository
